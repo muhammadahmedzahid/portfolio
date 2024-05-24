@@ -50,7 +50,13 @@ https://docs.docker.com/desktop/install/windows-install/
 
 ![img_3.png](img_3.png)
 
-Of course, you can run multiple containers from 1 image.
+Of course, you can run multiple containers from same image.
 
 
+# Below are some commands:
 
+Ones your docker is installed up and running then 
+
+```
+docker ps
+```
