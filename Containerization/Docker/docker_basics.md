@@ -55,8 +55,46 @@ Of course, you can run multiple containers from same image.
 
 # Below are some commands:
 
-Ones your docker is installed up and running then 
-
+Ones your docker is installed up and running then   
+- List running containers:  
 ```
 docker ps
 ```
+
+- List all Doker images
+```
+docker images
+```
+
+- Pulling an image from the Docker hub and images are being versioned as well just like software release and docker tags are being used to identity the docker images.
+```
+docker pull image_name/redis
+```
+
+Pulling the specific version we can use the below command.
+let say you want to run the redis locally when you run the pull command it first check if it is present locally then
+it will run from it otherwise it will fetch the image from the DockerHub and then run the container.
+
+```
+docker pull image_name/redis:version_name
+```
+
+In order to run a container from the image use the below command.
+
+```
+docker run {name}:{tag}
+```
+Fun Fact!: Docker generates a random name for the container automatically if you don't specify one.
+
+- Run the container in the background
+Detach the container 
+
+```
+docker run {name}:{tag} -d or --detach
+```
+It will run in the background and return its container id so how can you see the logs of the container.
+
+```
+docker logs container_id
+```
+
