@@ -11,7 +11,13 @@
 9. Each container has its own ip address and port number from where you can connect with other container or internet.  
 10. If you want to run redis different versions you can create multiple containers, and you can run it smoothly.  
 11. Docker commands are same irrespective of the operating system.  
-
+13. vLLM Self deployment of the LLM on your local server and building the image on your personal computer
+14. is a hectic thing to perform so we can directly pull an image from the docker hub and then run the container.
+15. docker run --gpus all \
+    -e HF_TOKEN=$HF_TOKEN -p 8000:8000 \
+    ghcr.io/mistralai/mistral-src/vllm:latest \
+    --host 0.0.0.0 \
+    --model mistralai/Mistral-7B-Instruct-v0.2
 
 
 
@@ -32,5 +38,19 @@ In case of containerization it uses docker engine and then docker engine talk wi
 
 ![img_2.png](img_2.png)
 
-Later Docker desktop is developed and through that you can run doker on any machine.
+Later Docker desktop is developed and through that you can run doker on any machine.  
+
+
+# Installing Docker For Windows
+
+https://docs.docker.com/desktop/install/windows-install/
+
+
+# Docker Images vs Containers
+
+![img_3.png](img_3.png)
+
+Of course, you can run multiple containers from 1 image.
+
+
 
