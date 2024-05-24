@@ -6,7 +6,7 @@
 - Attended one of Pakistan's top universities, comparable to Harvard or MIT in the United States.
 - Possess around 3 years of industry experience, primarily in backend engineering roles.
 - Worked for nearly 2 years at Systems Limited, Pakistan's largest services-based company.
-- Joined Bazoom, the world's largest link-building company.
+- Joined HeyMedia, the world's largest link-building company.
 
 ## Skills
 
@@ -23,3 +23,21 @@
 
 ### Cloud
 - AWS
+
+## Soft Skills
+
+### Languages I Speak
+- English
+- Urdu
+- Hindi
+- Punjabi
+
+### Communication Skills
+- Top-notch communication skills.
+- Ability to discuss problems with colleagues and provide solutions or architectural guidance.
+
+### Problem-Solving Mindset
+- Persistent
+- Patient
+- Calm personality
+- Adaptable to different environments
