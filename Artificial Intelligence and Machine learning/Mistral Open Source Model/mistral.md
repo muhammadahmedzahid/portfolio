@@ -41,3 +41,7 @@ I created a huggingface account and there we need to create an access token and 
 Finally it will run a docker container and provide us the below API.
 
 https://docs.mistral.ai/api/
+
+
+# GPU
+Nvidia developed CUDA which will is an API 
