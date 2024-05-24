@@ -12,7 +12,7 @@ Paid API's
 Open Source and Free
 
 - Mistral
-- LLMMA (Facebook Model)
+- LLAMA (Facebook Model)
 
 
 # Mistral Github
@@ -32,3 +32,12 @@ https://github.com/mistralai/mistral-inference/issues/142
 So now I am trying pull the image directly from the huggingface as described below  
 https://docs.mistral.ai/deployment/self-deployment/vllm/  
 
+We have 3 different models we can pull and use.
+
+![img.png](img.png)
+
+I created a huggingface account and there we need to create an access token and then through that we can use this
+
+Finally it will run a docker container and provide us the below API.
+
+https://docs.mistral.ai/api/
