@@ -45,3 +45,18 @@ https://docs.mistral.ai/api/
 
 # GPU
 Nvidia developed CUDA which will is an API 
+
+# Nvidia Container Toolkit
+nvidia container toolkit
+You need to install nvidia container toolkit
+https://www.youtube.com/watch?v=CO43b6XWHNI
+
+If you need to install on windows then you need to perform the above steps
+Install the WSL and then through that install the driver.
+
+
+https://docs.nvidia.com/cuda/wsl-user-guide/index.html
+Follow the above to run the container 
+
+
+https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html

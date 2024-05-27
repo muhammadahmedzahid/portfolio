@@ -182,5 +182,12 @@ RUN
 RUN is the command for running a command inside the docker image file.
 
 
+
+# Docker Swarm
+
+![img_9.png](img_9.png)
+
+In Docker Swarm there is one master node and then their are child nodes which can be administrated by docker master. 
+
 # Issues Faced Working in the Company
 
