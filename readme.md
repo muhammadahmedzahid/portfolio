@@ -41,3 +41,10 @@
 - Patient
 - Calm personality
 - Adaptable to different environments
+
+# Website
+
+https://streamingly.net/
+
+The website is created by me and my friend for streaming videos over HSL with custom solutions.
+
