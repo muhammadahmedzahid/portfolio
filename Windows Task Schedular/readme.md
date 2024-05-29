@@ -8,13 +8,13 @@ This guide will help you set up a scheduled task on Windows using the Task Sched
 
 Search for **Task Scheduler** in the Windows search bar and open it. If necessary, right-click and select **Run as administrator**.
 
-![Task Scheduler](Task Scheduler.png)
+![TaskScheduler](TaskScheduler.png)
 
 ### 2. Create a New Task
 
 Click on **Create Task** in the right-hand Actions pane.
 
-![Create Task](Create Task.png)
+![CreateTask](CreateTask.png)
 
 ### 3. General Settings
 
@@ -24,7 +24,7 @@ In the **General** tab, provide a name and description for the task so you can e
 
 Click on the **Triggers** tab, then click **New** to create a new trigger. Set your preferred schedule and click **OK** to save.
 
-![Set Triggers](Set Triggers.png)
+![SetTriggers](SetTriggers.png)
 
 ### 5. Set Actions
 
@@ -36,13 +36,13 @@ In the **Actions** tab, click **New** to create a new action. Fill in the detail
 
 Make sure to enclose the path in double quotations if it contains spaces.
 
-![Set Actions](Set Actions.png)
+![SetActions](SetActions.png)
 
 ### 6. Finalize and Save
 
 Click **OK** to save the task. Your task is now set up to run periodically, and you can see its status in the Task Scheduler.
 
-![Task Status](Task Status.png)
+![TaskStatus](TaskStatus.png)
 
 ## Congratulations!
 
