@@ -48,3 +48,12 @@ Click **OK** to save the task. Your task is now set up to run periodically, and 
 
 You have successfully set up a Python script to run on a schedule using Task Scheduler.
 
+## Tip
+
+Suppose you have a task scheduler that is running, but encounters errors. In such cases, you have the option to restart it. You can utilize the following code to restart the script:
+
+For testing purposes, two scripts, test_script_01.py and test_script_02.py, along with the monitor script, have been provided. You can configure your monitor script within the task scheduler to automate tasks
+
+
+
+
