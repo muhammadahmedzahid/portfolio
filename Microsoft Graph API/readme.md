@@ -5,7 +5,7 @@ Direct URLs:
 
 https://login.microsoftonline.com/{Tenant ID}/oauth2/v2.0/authorize?client_id={AppReg ID}
 &response_type=code
-&redirect_uri=http%3a%2f%2flocalhost%3a8080
+&redirect_uri={Your_call_back_url_with_you_set_in_application_on_azure}
 &response_mode=query
 &scope={AppReg ID}%2f.default&state=12345&sso_reload=true
 
@@ -106,3 +106,50 @@ So the event only notify you that the change has occurs but it does not load the
 that you need to use that email id and then future fetches the email.
 
 
+import requests
+import json
+shared_mailbox = 'folder_name'
+access_token = "here_is_your_access_token"
+
+notification_url = 'your_web_hook_url'
+
+url = 'https://graph.microsoft.com/v1.0/subscriptions'
+
+headers = {
+    'Authorization': f'Bearer {access_token}',
+    'Content-Type': 'application/json'
+}
+
+data = {
+    "changeType": "created",
+    "notificationUrl": notification_url,
+    "resource": f"/users/{shared_mailbox}/mailFolders/inbox/messages",
+    "expirationDateTime": "2024-06-06T18:23:45.9356913Z",  # Adjust expiration date as needed
+    "clientState": "secretClientValue"
+}
+
+response = requests.post(url, headers=headers, data=json.dumps(data))
+print(response.json())
+
+# Make sure you the correct scope of the resource
+
+# import requests
+#
+# url = "https://login.microsoftonline.com/{ID}/oauth2/v2.0/token"
+#
+# payload = {
+#     'client_id': '{client_id}',
+#     "scope": "https://graph.microsoft.com/.default offline_access",
+#     "refresh_token": "{copy_paste_the_refresh_token_from_first_request}",
+#     'grant_type': 'refresh_token',
+#     'client_secret': '{secret_value}'
+# }
+#
+# headers = {
+#     'Content-Type': 'application/x-www-form-urlencoded'
+# }
+#
+# response = requests.post(url, data=payload, headers=headers)
+#
+# print(response.status_code)
+# print(response.text)
