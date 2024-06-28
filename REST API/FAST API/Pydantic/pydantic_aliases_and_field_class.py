@@ -17,3 +17,6 @@ data = {
 }
 p = Person.model_validate(data)
 print(p)
+
+
+
