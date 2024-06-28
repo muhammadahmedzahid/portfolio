@@ -1,0 +1,15 @@
+# Ignore .env files
+*.env
+
+# Ignore node_modules directory for Node.js projects
+node_modules/
+
+# Ignore build output for React projects
+/build
+/coverage
+/npm-debug.log*
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
